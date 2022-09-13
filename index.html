@@ -13,8 +13,16 @@
     <title>Document</title>
 </head>
 <body class="overflow-x-hidden font-Lato">
-    <div class="menu-icon">
-        <button><img class="w-12 h-auto" src="./rsc/Icons/Icon-Menu.svg" alt="Menu Icons"></button>
+    <div class="nav-menu">
+        <div class="mobile-menu">
+            <button class="menu-button"><img class="w-12 h-auto" src="./rsc/Icons/Icon-Menu.svg" alt="Menu Icons"></button>
+            <ul class="menu-content">
+                <li>About</li>
+                <li>Courses</li>
+                <li>Join</li>
+                <li>Contact</li>
+            </ul>
+        </div>
     </div>
     <section class="headline-container h-[550px]">
         <div class="headline-white">            
@@ -72,13 +80,16 @@
                     </p>
                 </div>
             </div>
+            <div class="grid place-content-center pt-12">
+                <button class="text-white text-2xl text-bold px-8 py-4 bg-orange-500">Join The Academy</button>
+            </div>
         </div>
     </section>
-    <section class="flex flex-col items-center h-auto w-full pb-16">
+    <section class="flex flex-col items-center h-auto w-full pb-36">
         <h2 class="section-header">Speakers</h2>
         <hr class="section-header-line">
-        <ul class="speakers grid gap-y-20 mt-10 p-2">
-            <li class="flex gap-x-5 m-0 h-32">
+        <ul class="speakers grid gap-y-32 mt-10 px-2">
+            <!-- <li class="flex gap-x-5 m-0 h-32">
                 <div class="speakers-image flex-[1.2] flex justify-center items-center">
                     <img src="./rsc/Images/avatar.jpg" alt="Speaker Avatar" class="min-w-[100px] min-h-[100px] max-w-[300px] max-h-[300px]" width="60%" height="60%">
                 </div>
@@ -90,7 +101,7 @@
                         <p class="mt-3">Listen to the speakers from various countries about the messages of sharing and opening.</p>
                     </div>
                 </div>
-            </li>
+            </li> -->
         </ul>
     </section>
     <section class="partners flex flex-col items-center w-full bg-dark-background pt-10 pb-52">
