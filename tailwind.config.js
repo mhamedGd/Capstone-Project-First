@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "custom-blue": "#00baff",
-        "custom-purple": "#6336fa",
+        "headline-text": "rgb(181, 30, 0)",
+        "dark-background": "rgb(32,32,32)",
       }
     },
     fontFamily: {
