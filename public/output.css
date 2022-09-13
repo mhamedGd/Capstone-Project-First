@@ -866,9 +866,7 @@ video {
 .headline-text {
   min-width: 300px;
   max-width: 24rem;
-  --tw-text-opacity: 1;
-  color: rgb(249 115 22 / var(--tw-text-opacity));
-  background: url("../rsc/images/text-background.jpg") no-repeat center center;
+  background: url("../rsc/images/Background.png") no-repeat center center;
   background-size: cover;
   background-clip: content-box;
   -webkit-text-fill-color: transparent;
