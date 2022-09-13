@@ -129,9 +129,3 @@ function CreateSpeaker(SPEAKER_INFO_OBJECT) {
 for (let i = 0; i < 9; i += 1) {
   CreateSpeaker(SPEAKERS_INFORMATION[i]);
 }
-
-const MENU_BUTTON = document.querySelector('.menu-button');
-
-MENU_BUTTON.addEventListener('click', () => {
-  document.querySelector('.menu-content').classList.toggle('open');
-});
