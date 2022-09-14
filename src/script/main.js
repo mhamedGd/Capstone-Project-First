@@ -1,5 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-unused-vars */
+/* eslint-disable camelcase */
+/* eslint-disable prefer-const */
 
 const SPEAKERS_INFORMATION = [
   {
@@ -72,13 +74,7 @@ function CreateSpeaker(SPEAKER_INFO_OBJECT) {
   SPEAKER_MAIN.classList.add('h-32');
 
   const IMAGE_DIV = document.createElement('div');
-  IMAGE_DIV.classList.add('speakers-image');
-  IMAGE_DIV.classList.add('flex-[1.2]');
-  IMAGE_DIV.classList.add('flex');
-  IMAGE_DIV.classList.add('justify-center');
-  IMAGE_DIV.classList.add('items-center');
-  IMAGE_DIV.classList.add('max-w-[150px]');
-  IMAGE_DIV.classList.add('max-h-[150px]');
+  IMAGE_DIV.classList.add('speakers-image', 'flex-[1.2]', 'flex', 'justify-center', 'items-center', 'max-w-[150px]', 'max-h-[150px]');
   SPEAKER_MAIN.appendChild(IMAGE_DIV);
 
   const IMAGE = document.createElement('img');
@@ -124,8 +120,25 @@ function CreateSpeaker(SPEAKER_INFO_OBJECT) {
   INFO_DIV_DIV.appendChild(SPEAKER_PARAGRAPH);
 
   document.querySelector('.speakers').appendChild(SPEAKER_MAIN);
+  return SPEAKER_MAIN;
 }
 
+let speakers_array = [];
 for (let i = 0; i < 9; i += 1) {
-  CreateSpeaker(SPEAKERS_INFORMATION[i]);
+  const speaker = CreateSpeaker(SPEAKERS_INFORMATION[i]);
+  speakers_array.push(speaker);
 }
+
+let hide = true;
+function HideSpeakers() {
+  if (window.innerWidth < 640) {
+    for (let i = 2; i < speakers_array.length; i += 1) {
+      speakers_array[i].style.display = (hide === true ? 'none' : 'flex');
+    }
+    hide = !hide;
+    const MORE_BUTTON = document.querySelector('.more-btn');
+    MORE_BUTTON.textContent = (hide ? 'Show Less' : 'Show More');
+  }
+}
+
+HideSpeakers();

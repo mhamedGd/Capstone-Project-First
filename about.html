@@ -15,30 +15,43 @@
 <body class="overflow-x-hidden font-Lato">
     <div class="nav-menu">
         <div class="logo"><a href="./index.html"><img src="./rsc/Images/logo.png" alt="GameDev Academy Logo"></a></div>
+        <ul class="desktop-menu">
+            <li><a href="./index.html">Home</a></li>
+            <li class="text-orange-600"><a href="./about.html">About</a></li>
+            <li>Courses</li>
+            <li>Join</li>
+            <li class="mr-20">Contact</li>
+            <li class="pl-24"><div class="px-4 py-1 border-4 text-orange-600 border-orange-600">GAMEDEV ACADEMY</div></li>
+        </ul>
         <div class="mobile-menu">
             <button class="menu-button"><img class="w-12 h-auto" src="./rsc/Icons/Icon-Menu.svg" alt="Menu Icons"></button>
         </div>
         <ul class="menu-content">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
+            <li class="text-orange-500"><a href="./about.html">About</a></li>
             <li>Courses</li>
             <li>Join</li>
             <li>Contact</li>
         </ul>
     </div>
-    <section class="headline-container h-[550px] text-center">
-        <div class="headline-white">            
-            <h2 class="headline-text text-2xl">"Creativity Thrives"</h2>
-            <h1 class="headline-text text-4xl font-bold">
-                GAMEDEV ACADEMY
-            </h1>
-            <p class="headline-paragraph border-white">
-                A community that welcomes any person interested in the process of creating a video-game. Anything you'll need to kickstart your journey in the game-dev industry is available here.
-            </p>
-            <p class="min-w-[300px] max-w-sm mt-12 p-0 text-gray-800 font-light">
-                Please contact us if you have any enquiry!<br>                
-            </p>
-            <div class="grid place-content-center mt-2"><p class="w-52 p-1 text-zinc-800 border-2 border-dashed border-zinc-800 font-semibold">mhamed.m14@gmail.com</p></div>
+    <section class="headline-container h-[550px] sm:h-[650px] text-center">
+        <div class="headline-white">
+            <div class="flex flex-col justify-center items-center w-full">
+                <h2 class="headline-text text-2xl sm:text-4xl">"Creativity Thrives"</h2>
+                <h1 class="headline-text text-4xl sm:text-8xl font-bold">
+                    GAMEDEV ACADEMY
+                </h1>
+                <p class="headline-paragraph border-white">
+                    A community that welcomes any person interested in the process of creating a video-game. Anything you'll need to
+                    kickstart your journey in the game-dev industry is available here.
+                </p>
+                <p class="min-w-[300px] max-w-sm mt-12 p-0 text-gray-800 font-light">
+                    Please contact us if you have any enquiry!<br>
+                </p>
+                <div class="grid place-content-center mt-2">
+                    <p class="w-52 p-1 text-zinc-800 border-2 border-dashed border-zinc-800 font-semibold">mhamed.m14@gmail.com</p>
+                </div>
+            </div>
         </div>
     </section>
     <section class="pb-16 w-full h-auto flex flex-col items-center text-center">
@@ -55,12 +68,9 @@
     <section class="partners flex flex-col items-center w-full bg-dark-background pt-10 pb-52">
         <h2 class="section-header text-white">Partners</h2>
         <hr class="section-header-line">
-        <div class="mt-20 p-2 w-full h-auto flex flex-wrap flex-row gap-10 justify-center">
-            <img src="./rsc/Images/Game_Developers_Conference_logo.svg.png" alt="Game Development Conference Logo">
-            <img src="./rsc/Images/Game_Developers_Conference_logo.svg.png" alt="Game Development Conference Logo">
-            <img src="./rsc/Images/Game_Developers_Conference_logo.svg.png" alt="Game Development Conference Logo">
-            <img src="./rsc/Images/Game_Developers_Conference_logo.svg.png" alt="Game Development Conference Logo">
-            <img src="./rsc/Images/Game_Developers_Conference_logo.svg.png" alt="Game Development Conference Logo">
+        <div class="mt-20 p-4 w-full h-auto flex flex-wrap flex-row gap-12 sm:gap-40 justify-center">
+            <div class="grid place-content-center"><img class="invert" src="./rsc/Images/Game_Developers_Conference_logo.svg.png" alt="Game Development Conference Logo" width="auto" height="auto"></div>
+            <div><img src="./rsc/Images/Epic_Games_Logo.png" alt="Game Development Conference Logo" width="150px" height="150px"></div>
         </div>
     </section>
 </body>
