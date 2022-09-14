@@ -79,10 +79,7 @@ function CreateSpeaker(SPEAKER_INFO_OBJECT) {
 
   const IMAGE = document.createElement('img');
   IMAGE.src = SPEAKER_INFO_OBJECT.image;
-  IMAGE.classList.add('min-w-[100px]');
-  IMAGE.classList.add('min-h-[100px]');
-  IMAGE.classList.add('max-w-[300px]');
-  IMAGE.classList.add('max-h-[300px]');
+  IMAGE.classList.add('min-w-[100px]', 'min-h-[100px]', 'max-w-[300px]', 'max-w-[300px]', 'max-h-[300px]');
   IMAGE.width = '60%';
   IMAGE.height = '60%';
   IMAGE_DIV.appendChild(IMAGE);
@@ -95,23 +92,16 @@ function CreateSpeaker(SPEAKER_INFO_OBJECT) {
   INFO_DIV.appendChild(INFO_DIV_DIV);
 
   const SPEAKER_NAME = document.createElement('h3');
-  SPEAKER_NAME.classList.add('text-2xl');
-  SPEAKER_NAME.classList.add('font-bold');
+  SPEAKER_NAME.classList.add('text-2xl', 'font-bold');
   SPEAKER_NAME.textContent = SPEAKER_INFO_OBJECT.name;
   INFO_DIV_DIV.appendChild(SPEAKER_NAME);
 
   const SPEAKER_INFO = document.createElement('p');
-  SPEAKER_INFO.classList.add('text-orange-400');
-  SPEAKER_INFO.classList.add('text-xl');
-  SPEAKER_INFO.classList.add('mt-2.5');
+  SPEAKER_INFO.classList.add('text-orange-400', 'text-xl', 'mt-2.5');
   SPEAKER_INFO.textContent = SPEAKER_INFO_OBJECT.info;
   INFO_DIV_DIV.appendChild(SPEAKER_INFO);
 
-  const LINE = document.createElement('hr');
-  LINE.classList.add('w-8');
-  LINE.classList.add('mt-3');
-  LINE.classList.add('border-b-1');
-  LINE.classList.add('border-black');
+  const LINE = document.createElement('hr', 'w-8', 'mt-3', 'border-b-1', 'border-black');
   INFO_DIV_DIV.appendChild(LINE);
 
   const SPEAKER_PARAGRAPH = document.createElement('p');
