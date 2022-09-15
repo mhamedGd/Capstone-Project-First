@@ -5,25 +5,28 @@
 @tailwind utilities;
 
 .nav-menu {
-  @apply fixed grid w-full grid-cols-2 place-content-between bg-dark-background;
+  @apply sticky grid w-full grid-cols-2 sm:grid-cols-3 place-content-between shadow-md bg-white;
 
   z-index: 5;
 }
 
 .logo {
-  @apply grid place-content-start sm:place-content-center p-2;
+  @apply grid place-content-start sm:place-content-around p-2;
 
   padding: 0.5rem;
 }
 
 .logo img {
-  filter: brightness(0) invert();
   width: 100px;
   height: auto;
 }
 
+.menu-button img {
+  filter: brightness(0);
+}
+
 .desktop-menu {
-  @apply hidden sm:flex justify-center items-center text-white font-semibold;
+  @apply hidden sm:flex col-span-2 justify-center items-center font-semibold;
 }
 
 .desktop-menu li {
@@ -48,7 +51,7 @@
 }
 
 .menu-content.open {
-  @apply col-span-2 flex flex-col gap-y-4 pb-4 text-center text-2xl text-white;
+  @apply col-span-2 flex flex-col gap-y-4 pb-4 text-center text-2xl;
 }
 
 .headline-container {
@@ -102,7 +105,7 @@
 }
 
 .Icon img {
-  filter: brightness(0) invert();
+  @apply invert;
 }
 
 .main-program-icon-container {
@@ -136,6 +139,11 @@
   background-size: 50px;
   background-position: left top;
   background-repeat: no-repeat;
+}
+
+.previous-year {
+  background-image: url("../rsc/images/2021.jpg");
+  background-size: cover;
 }
 
 .partners .invert {

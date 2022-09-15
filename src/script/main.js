@@ -101,7 +101,8 @@ function CreateSpeaker(SPEAKER_INFO_OBJECT) {
   SPEAKER_INFO.textContent = SPEAKER_INFO_OBJECT.info;
   INFO_DIV_DIV.appendChild(SPEAKER_INFO);
 
-  const LINE = document.createElement('hr', 'w-8', 'mt-3', 'border-b-1', 'border-black');
+  const LINE = document.createElement('hr');
+  LINE.classList.add('w-8', 'mt-3', 'border-b-1', 'border-black');
   INFO_DIV_DIV.appendChild(LINE);
 
   const SPEAKER_PARAGRAPH = document.createElement('p');
