@@ -1,0 +1,8 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable no-unused-vars */
+
+const MENU_BUTTON = document.querySelector('.menu-button');
+
+MENU_BUTTON.addEventListener('click', () => {
+  document.querySelector('.menu-content').classList.toggle('open');
+});

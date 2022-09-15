@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/output.css">
+    <link href="rsc/Fonts/Cocogoose.ttf">
+    <script src="./src/script/main.js" defer></script>
+    <script src="./src/script/mobile-menu" defer></script>
+    <title>GameDev Academy</title>
+</head>
+<body class="overflow-x-hidden font-Lato">
+    <div class="hidden sm:flex justify-end h-8 text-white bg-zinc-800">
+        <div class="flex justify-center gap-x-3 px-56 items-center">
+            <a href=""><img class="invert" src="./rsc/Icons/icons8-facebook-f.svg" alt="" width="80%"></a>
+            <a href=""><img class="invert" src="./rsc/Icons/icons8-twitter.svg" alt="" width="80%"></a>
+            <a href="" class="px-4">English</a>
+            <a href="" class="px-4">My Page</a>
+            <a href="" class="px-4">Logout</a>
+        </div>
+    </div>
+    <div class="nav-menu">
+        <div class="logo"><a href="./index.html"><img src="./rsc/Images/logo.png" alt="GameDev Academy Logo"></a></div>
+        <ul class="desktop-menu">
+            <li class="text-orange-600"><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li>Courses</li>
+            <li>Join</li>
+            <li class="mr-20">Contact</li>
+            <li class="pl-24"><div class="px-4 py-1 border-4 text-orange-600 border-orange-600">GAMEDEV ACADEMY</div></li>
+        </ul>
+        <div class="mobile-menu">
+            <button class="menu-button"><img class="w-12 h-auto" src="./rsc/Icons/Icon-Menu.svg" alt="Menu Icons"></button>
+        </div>
+        <ul class="menu-content">
+            <li class="text-orange-600"><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li>Courses</li>
+            <li>Join</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <section class="headline-container h-[550px] sm:h-[700px]">
+        <div class="headline-white"> 
+            <div class="ml-0 sm:ml-48">
+                <h2 class="headline-text text-2xl sm:text-4xl">"Creativity Thrives"</h2>
+                <h1 class="headline-text text-4xl sm:text-8xl font-bold">
+                    GAMEDEV ACADEMY
+                </h1>
+                <p class="headline-paragraph border-white">
+                    A community that welcomes any person interested in the process of creating a video-game.
+                </p>
+                <h2 class="min-w-[300px] max-w-sm text-gray-800 font-bold text-2xl mt-5">1/1/2023 - Next Term</h2>
+                <p class="min-w-[300px] max-w-sm text-gray-800 font-light">@ Baghdad - Bait Al-hikma \ Right next-to the Abassid
+                    Palace</p>
+            </div>
+        </div>
+    </section>
+    <section class="main-program flex flex-col h-auto pt-2 pb-16 bg-dark-background items-center">
+        <h2 class="section-header text-white">Main Program</h2>
+        <hr class="section-header-line">
+        <div class="flex flex-col sm:flex-row sm:justify-center items-center max-w-xs gap-y-2 sm:gap-x-5 mt-10">
+            <div class="main-program-content">
+                <div class="Icon main-program-icon-container">
+                    <img src="rsc/Icons/Icon-Course.svg" alt="" width="80px" height="80px" class="sm:w-[50px]">
+                </div>
+                <h3 class="main-program-label">
+                    Courses
+                </h3>
+                <div class="max-h-15">
+                    <p class="main-program-paragraph">
+                        Listen to the speakers from various countries about the messages of sharing and opening.
+                    </p>
+                </div>
+            </div>
+            <div class="main-program-content">
+                <div class="Icon main-program-icon-container">
+                    <img src="rsc/Icons/Icon-Exhibition.svg" alt="" width="80px" height="80px" class="sm:w-[50px]">
+                </div>
+                <h3 class="main-program-label">
+                    Reels
+                </h3>
+                <div class="max-h-15 ml-6 sm:ml-0">
+                    <p class="main-program-paragraph">
+                        Listen to the speakers from various countries about the messages of sharing and opening.
+                    </p>
+                </div>
+            </div>
+            <div class="main-program-content">
+                <div class="Icon main-program-icon-container">
+                    <img src="rsc/Icons/Icon-Forum.svg" alt="" width="80px" height="80px" class="sm:w-[50px]">
+                </div>
+                <h3 class="main-program-label">
+                    Forum
+                </h3>
+                <div class=" max-h-15 ml-2 sm:ml-0">
+                    <p class="main-program-paragraph">
+                        Listen to the speakers from various countries about the messages of sharing and opening.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="grid place-content-center pt-12">
+            <button class="btn text-2xl text-bold">Join The Academy</button>
+        </div>
+    </section>
+    <section class="flex flex-col items-center h-auto w-full pb-36">
+        <h2 class="section-header">Speakers</h2>
+        <hr class="section-header-line">
+        <ul class="speakers grid sm:grid-cols-2 gap-y-40 sm:gap-y-20 mt-10 p-4 sm:px-24">
+            <!-- <li class="flex gap-x-5 m-0 h-32">
+                <div class="speakers-image flex-[1.2] max-w-[150px] flex justify-center items-center">
+                    <img src="./rsc/Images/avatar.jpg" alt="Speaker Avatar" class="min-w-[100px] min-h-[100px] max-w-[300px] max-h-[300px]" width="60%" height="60%">
+                </div>
+                <div class="flex-[2]">
+                    <div class="">
+                        <h3 class="text-2xl font-bold">Speaker</h3>
+                        <p class="text-orange-400 text-xl mt-2.5">This is orange</p>
+                        <hr class="w-8 mt-3 border-b-1 border-black">
+                        <p class="mt-3">Listen to the speakers from various countries about the messages of sharing and opening.</p>
+                    </div>
+                </div>
+            </li> -->
+        </ul>
+        <div class="sm:hidden mt-40 border-2 border-zinc-800 px-12 py-2"><button class="more-btn text-xl font-semibold" onclick="HideSpeakers()">More Speakers</button></div>
+    </section>
+    <section class="partners flex flex-col items-center w-full bg-dark-background pt-10 pb-52">
+        <h2 class="section-header text-white">Partners</h2>
+        <hr class="section-header-line">
+        <div class="mt-20 p-4 w-full h-auto flex flex-wrap flex-row gap-12 sm:gap-40 justify-center">
+            <div class="grid place-content-center"><img class="invert" src="./rsc/Images/Game_Developers_Conference_logo.svg.png" alt="Game Development Conference Logo" width="auto" height="auto"></div>
+            <div><img src="./rsc/Images/Epic_Games_Logo.png" alt="Game Development Conference Logo" width="150px" height="150px"></div>
+        </div>
+    </section>
+    <footer class="flex justify-center w-full h-56 px-6">
+        <div class="flex justify-center w-80 items-center p-1">
+            <img class="w-full sm:w-56" src="./rsc/Images/CreativeCommons_logo_trademark.png" alt="">
+        </div>
+        <div class="flex items-center justify-center px-4">
+            <p class="text-left font-semibold text-md">
+                2022 Creative Commons, There are no rights to be reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

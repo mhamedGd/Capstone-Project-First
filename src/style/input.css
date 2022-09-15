@@ -1,0 +1,167 @@
+/* stylelint-disable */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-menu {
+  @apply sticky grid w-full grid-cols-2 sm:grid-cols-3 place-content-between shadow-md bg-white;
+
+  z-index: 5;
+}
+
+.logo {
+  @apply grid place-content-start sm:place-content-around p-2;
+
+  padding: 0.5rem;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.menu-button img {
+  filter: brightness(0);
+}
+
+.desktop-menu {
+  @apply hidden sm:flex col-span-2 justify-center items-center font-semibold;
+}
+
+.desktop-menu li {
+  @apply px-4 cursor-pointer;
+  transition: 0.1s;
+}
+
+.desktop-menu li:hover {
+  border-bottom: 1px solid rgb(255, 111, 0);
+}
+
+.mobile-menu {
+  @apply sm:hidden flex justify-end;
+}
+
+.mobile-menu button {
+  @apply mr-1;
+}
+
+.menu-content {
+  display: none;
+}
+
+.menu-content.open {
+  @apply col-span-2 flex flex-col gap-y-4 pb-4 text-center text-2xl;
+}
+
+.headline-container {
+  background-image: url("../rsc/images/headline.png");
+  background-size: cover;
+}
+
+.headline-white {
+  @apply flex w-full h-full flex-col justify-center p-6;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.headline-text {
+  @apply min-w-[300px] max-w-sm sm:min-w-[600px] sm:max-w-full;
+
+  background: linear-gradient(90deg, rgba(255, 17, 17, 1) 0%, rgb(255, 111, 0) 30%, rgba(255, 180, 0, 1) 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+}
+
+.headline-paragraph {
+  @apply mt-7 min-w-[300px] max-w-sm border-2 p-2.5 text-sm text-zinc-800;
+}
+
+.main-program {
+  background-image: url("../rsc/images/Background.png");
+  background-repeat: repeat;
+  background-size: 125%;
+}
+
+.section-header {
+  @apply mt-10 text-2xl;
+}
+
+.section-header-line {
+  @apply mt-3 w-10 border-orange-600;
+}
+
+.main-program-content {
+  @apply flex sm:flex-col items-center w-[90vw] sm:min-w-min sm:w-72 h-auto sm:h-72 gap-x-3 bg-slate-100/5 p-2.5;
+
+  transition: 0.2s;
+}
+
+.main-program-content:hover {
+  @apply cursor-pointer border-2 border-solid border-white;
+}
+
+.Icon img {
+  @apply invert;
+}
+
+.main-program-icon-container {
+  @apply pl-4 sm:p-10 flex justify-center items-center;
+}
+
+.main-program-label {
+  @apply w-20 font-bold text-lg text-orange-500 sm:text-center;
+}
+
+.main-program-paragraph {
+  @apply text-sm text-white sm:w-52 sm:text-center;
+}
+
+.btn {
+  background: rgb(255, 111, 0);
+  padding: 1rem 2rem;
+  color: white;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background: none;
+  padding: 1rem 3rem;
+  color: rgb(255, 111, 0);
+  border: 1px solid rgb(255, 111, 0);
+}
+
+.speakers-image {
+  background-image: url("../rsc/Images/checkers.jpg");
+  background-size: 50px;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.previous-year {
+  background-image: url("../rsc/images/2021.jpg");
+  background-size: cover;
+}
+
+.partners .invert {
+  height: auto;
+  width: 10rem;
+  filter: brightness(0) invert();
+}
+
+@media (min-width: 640px) {
+  .sm\:w-72 {
+    width: 18rem;
+  }
+
+  .sm\:w-96 {
+    width: 24rem;
+  }
+
+  .main-program {
+    background-size: 50%;
+  }
+}
